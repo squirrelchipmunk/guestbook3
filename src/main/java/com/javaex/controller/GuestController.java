@@ -21,14 +21,14 @@ public class GuestController {
 		List<GuestBookVo> guestBookList = new GuestBookDao().getGuestBookList();
 		model.addAttribute("gList",guestBookList);
 		
-		return "/WEB-INF/views/addList.jsp";
+		return "addList";
 	}
 	
 	
 	@RequestMapping(value="/deleteForm", method= {RequestMethod.GET, RequestMethod.POST})
 	public String deleteForm(){
 		
-		return "/WEB-INF/views/deleteForm.jsp";
+		return "deleteForm";
 	}
 	
 	
